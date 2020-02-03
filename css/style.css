@@ -1,3 +1,66 @@
-.red {
-  color: red;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #F5F1E9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Lato', sans-serif;
+  height: 100vh;
+}
+h6 {
+  padding-top: 5px;
+  text-align: center;
+}
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 560px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+}
+
+.container__top {
+  display: flex;
+  justify-content: space-around;
+  height: 90px;
+  background-color: rgb(26, 188, 156);
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  color: #ffffff;
+}
+
+.container__giorni {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.caselle {
+  width: 80px;
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+  background-color: #FFFFFF;
+  color: #787878;
+}
+
+.caselle:hover {
+  background-color: #F8F8F8;
+}
+
+.caselle__festivita,
+.caselle__festivita:hover {
+  background-color: rgb(26, 188, 156);
+  color: #ffffff;
+  border: 2px solid #ffffff;
 }

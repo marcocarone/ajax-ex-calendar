@@ -36,7 +36,7 @@ function AggiungiZero(day) {
 
 function chiamataAjax(mese) {
 
-  var dataIniziale = moment("2018-" + mese, "YYYY-MM");
+  var dataIniziale = moment("2018-" + AggiungiZero(mese), "YYYY-MM");
   console.log("data iniziale :" + dataIniziale);
   // console.log(dataIniziale);
   var meseAnno = dataIniziale.format("MMMM YYYY");
@@ -67,14 +67,14 @@ function chiamataAjax(mese) {
     success: function(data) {
       var festivita = data.response;
       console.log(festivita);
-      $('.giorni-mese li').each(function() {
+      $('.caselle').each(function() {
         var data_giornoMese = $(this).attr('data-giorno');
         console.log("giorno mese " + data_giornoMese);
 
         for (var i = 0; i < festivita.length; i++) {
           if (festivita[i].date == data_giornoMese) {
-            $(this).addClass('red');
-            $(this).append(" " + festivita[i].name);
+            $(this).addClass('caselle__festivita');
+            $(this).children().append(" " + festivita[i].name);
           }
         }
       });
