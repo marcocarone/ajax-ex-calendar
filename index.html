@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en"  dir="ltr">
+<html lang="en" dir="ltr">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,14 +8,12 @@
   <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.css">
-  <script
-  src="https://code.jquery.com/jquery-3.4.1.min.js"
-  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-  crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.2/handlebars.js" integrity="sha256-N5vR06TQIR+YD8oS0yndB1pu/EITeijW52dwezEq7/g=" crossorigin="anonymous"></script>
   <script src="https://momentjs.com/downloads/moment-with-locales.min.js" charset="utf-8"></script>
   <title>Calendario JS 03.02.2020</title>
 </head>
+
 <body>
   <div class="container">
     <div class="container__top">
@@ -25,24 +24,17 @@
       <div id="successivo" class="center"><i class="fas fa-chevron-right"></i></div>
     </div>
     <div class="container__giorni giorni-mese">
-
     </div>
-
   </div>
 
-
-
-
-
-
-
-<script id="entry-template" type="text/x-handlebars-template">
-  <div class="caselle center" data-giorno="{{numeroGiorno}}">
+  <script id="entry-template" type="text/x-handlebars-template">
+    <div class="caselle center" data-giorno="{{numeroGiorno}}">
     {{giorno}}
     <h6></h6>
   </div>
 </script>
 
-<script src="js/script.js" charset="utf-8"></script>
+  <script src="js/script.js" charset="utf-8"></script>
 </body>
+
 </html>

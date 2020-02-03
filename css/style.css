@@ -12,10 +12,12 @@ body {
   font-family: 'Lato', sans-serif;
   height: 100vh;
 }
+
 h6 {
   padding-top: 5px;
   text-align: center;
 }
+
 .center {
   display: flex;
   justify-content: center;
