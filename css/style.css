@@ -66,3 +66,9 @@ h6 {
   color: #ffffff;
   border: 2px solid #ffffff;
 }
+
+@media screen and (max-width: 360px) {
+  body {
+    height: 100%;
+  }
+}
