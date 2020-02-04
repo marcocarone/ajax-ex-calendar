@@ -24,6 +24,9 @@ h6 {
   align-items: center;
 }
 
+.cursor {
+  cursor: pointer;
+}
 .container {
   width: 560px;
   background-color: #ffffff;
