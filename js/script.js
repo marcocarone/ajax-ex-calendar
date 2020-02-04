@@ -3,25 +3,36 @@ $(document).ready(function() {
   moment.locale("it")
   var mese = 1;
   chiamataAjax(mese)
+  $('.fa-chevron-left').hide();
 
   // click su mese successivo
   $('#successivo').on('click', function() {
     mese += 1;
+    $('.fa-chevron-left').show();
     if (mese > 12) {
-      alert('Il calendario del 2019 non è disponibile!');
+      $('.fa-chevron-right').hide();
+    }  else {
+      $('.giorni-mese').text('');
+      chiamataAjax(mese)
+    }
+    if (mese == 12) {
+      $('.fa-chevron-right').hide();
+    }
+  });
+
+  // click su mese precedente
+  $('#precedente').on('click', function() {
+    mese -= 1;
+    $('.fa-chevron-right').show();
+    if (mese < 1) {
+      $('.fa-chevron-left').hide();
     } else {
       $('.giorni-mese').text('');
       chiamataAjax(mese)
     }
-  });
-  // click su mese precedente
-  $('#precedente').on('click', function() {
-    mese -= 1;
-    if (mese < 1) {
-      alert('Il calendario del 2017 non è disponibile!');
-    } else {
-      $('.giorni-mese').text('');
-      chiamataAjax(mese)
+    if (mese == 1) {
+      $('.fa-chevron-left').hide();
+
     }
   });
 });
